@@ -6,6 +6,7 @@ Decentralized Application for an Immutable State Machine
 - Lisk [Lisk Blockchain](https://lisk.io/)
 - Process State Machine [BizRez.com] (http://bizrez.com)
 - InterPlanetary consumer market - WIP$
+- Node, Restify, MongoDB, React
 - AWS/Lambda
 
 ![Start Flow](https://github.com/mallond/dapp/blob/master/processDapp.png)
