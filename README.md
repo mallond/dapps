@@ -7,4 +7,4 @@ Decentralized Application for an Immutable State Machine
 - Process State Machine [BizRez.com] (http://bizrez.com)
 - InterPlanetary consumer market - WIP$
 
-![Start Flow](dapp/processDapp.png)
+![Start Flow](https://github.com/mallond/dapp/blob/master/processDapp.png)
