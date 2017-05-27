@@ -11,3 +11,24 @@ Decentralized Application for an Immutable State Machine
 - Node, Restify, MongoDB, React
 
 ![Start Flow](https://github.com/mallond/dapp/blob/master/processDapp.png)
+
+# IPFS Development Getting Started 
+
+Install gloabally 
+
+=> npm install ipfs --global
+
+Start the deamon 
+
+=> ipfs daemon
+
+Fancy Web Concel
+
+http://localhost:5001/
+
+
+
+
+
+
+
