@@ -1,7 +1,7 @@
 # dapp
 
 > This Repo also contains the Banner site for this repository. Single page HTML file with some propaganda. 
- [www.dapplog.com](http://http://www.dapplog.com/)
+ [www.dapplog.com](http://www.dapplog.com/)
 
 Decentralized Application for an Immutable State Machine
 
