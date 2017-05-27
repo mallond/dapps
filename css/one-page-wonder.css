@@ -11,6 +11,7 @@ body {
 .header-image {
     display: block;
     width: 100%;
+    hight: 75%;
     text-align: center;
     background: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/IPFS_logo.png') no-repeat center center scroll;
     -webkit-background-size: cover;
