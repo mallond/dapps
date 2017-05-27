@@ -14,10 +14,10 @@ body {
     hight: 75%;
     text-align: center;
     background: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/IPFS_logo.png') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: 75%;
+    -moz-background-size: 75%;
+    background-size: 75%;
+    -o-background-size: 75%;
 }
 
 .headline {
