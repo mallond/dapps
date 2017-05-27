@@ -8,16 +8,37 @@ body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+
+
 .header-image {
+    padding: 10em;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 75%;
     text-align: center;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/IPFS_logo.png') no-repeat center center scroll;
-    -webkit-background-size: 75%;
-    -moz-background-size: 75%;
-    background-size: 75%;
-    -o-background-size: 75%;
+    background: url('../pic/IPFS_logo.png') no-repeat center center scroll;
+    -webkit-background-size: 95%;
+    -moz-background-size: 95%;
+    background-size: 95%;
+    -o-background-size: 95%;
 }
 
 .headline {
@@ -34,6 +55,13 @@ body {
     font-size: 77px;
     background: #fff;
     background: rgba(255,255,255,0.9);
+}
+
+.lead {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 .featurette-divider {
