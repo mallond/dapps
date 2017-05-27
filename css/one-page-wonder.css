@@ -10,7 +10,7 @@ body {
 
 .header-image {
     display: block;
-    width: 75%;
+    width: 100%;
     text-align: center;
     background: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/IPFS_logo.png') no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -26,13 +26,13 @@ body {
 .headline h1 {
     font-size: 130px;
     /* background: #fff; */
-    background: rgba(255,255,255,0.9);
+    /*background: rgba(255,255,255,0.9);*/
 }
 
 .headline h2 {
     font-size: 77px;
     /* background: #fff; */
-    background: rgba(255,255,255,0.9);
+    /* background: rgba(255,255,255,0.9);*/
 }
 
 .featurette-divider {
