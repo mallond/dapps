@@ -1,0 +1,34 @@
+{
+  "name": "dapps",
+  "version": "0.0.1",
+  "description": "Transaction Logging - IPFS",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallond/dapps.git"
+  },
+  "keywords": [
+    "dapp",
+    "IPFS",
+    "bitcoing",
+    "ecdsa",
+    "logging"
+  ],
+  "author": "David Mallon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mallond/dapps/issues"
+  },
+  "homepage": "https://github.com/mallond/dapps#readme",
+  "dependencies": {
+    "bitcore-message": "^1.0.4",
+    "jsrsasign": "^7.2.0",
+    "jsrsasign-util": "^1.0.0"
+  },
+  "devDependencies": {
+    "commander": "^2.9.0"
+  }
+}

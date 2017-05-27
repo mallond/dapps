@@ -1,4 +1,8 @@
 # dapp
+
+> This Repo also contains the Banner site for this repository. Single page HTML file with some propaganda. 
+ [www.dapplog.com](http://http://www.dapplog.com/)
+
 Decentralized Application for an Immutable State Machine
 
 ## Stack
@@ -40,7 +44,7 @@ $ ipfs daemon
 
 Fancy Web Console
 
-http://localhost:5001/
+http://localhost:5001/webui
 
 Use Interplanetary Naming System
 
@@ -50,7 +54,7 @@ http://gateway.ipfs.io/ipns/<your peer ID>
 
 http://gateway.ipfs.io/ipns/Qmeg7VoDaso6Rbq2KG6i2PHHp3rWy4cd4NDpMmWS6MsMr5
 
-
+# ECDSA Elliptic Curve Digital Signature Algorithm - used by Bitcoin
 
 
 
