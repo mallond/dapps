@@ -11,13 +11,13 @@ body {
 .header-image {
     display: block;
     width: 100%;
-    hight: 100%;
+    height: 100%;
     text-align: center;
-    background: url('https://cdn-images-1.medium.com/max/506/1*pODteKFpBA72xtmYLHsO7Q@2x.png') no-repeat center center scroll;
-    -webkit-background-size: cover%;
-    -moz-background-size: cover%;
-    background-size: cover%;
-    -o-background-size: cover%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/IPFS_logo.png') no-repeat center center scroll;
+    -webkit-background-size: 75%;
+    -moz-background-size: 75%;
+    background-size: 75%;
+    -o-background-size: 75%;
 }
 
 .headline {
