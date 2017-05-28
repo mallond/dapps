@@ -21,10 +21,15 @@ $("#verifySubmit").click(function(){
   var signature = $("#verifySignature").val();
   try {
     var verified = DAPPLog.verify(address, signature, note);
+
     if (verified===true) {
       $("#verifySuccess").show();
       $("#verifyFail").hide();
+    } else {
+      $("#verifyFail").show();
+      $("#verifySuccess").hide();
     }
+
   } catch(error) {
     $("#verifyFail").show();
     $("#verifySuccess").hide();
