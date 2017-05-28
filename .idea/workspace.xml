@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3655c95-0725-4d1d-a3fb-428fde4f9a12" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dapps.iws" />
@@ -27,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.451505">
-              <caret line="9" column="195" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="195" />
+              <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -537,7 +538,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.451505">
-          <caret line="9" column="195" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="195" />
+          <caret line="148" column="72" selection-start-line="148" selection-start-column="72" selection-end-line="148" selection-end-column="72" />
           <folding />
         </state>
       </provider>
