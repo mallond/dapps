@@ -59,14 +59,14 @@ $(document).ready(function() {
     else{input.addClass("invalid");}
   });
 
-  $('#verifySignature').on('input change keyup paste', function() {
+  $('#verifySignature').on('click change keyup paste', function() {
     var textarea=$(this);
     var is_name=textarea.val();
     if(is_name){textarea.removeClass("invalid");}
     else{textarea.addClass("invalid");}
   });
 
-  $('#verifyAddress').on('input', function() {
+  $('#verifyAddress').on('input click', function() {
     var input=$(this);
     var is_name=input.val();
     if(is_name){input.removeClass("invalid");}
