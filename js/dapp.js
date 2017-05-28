@@ -23,15 +23,13 @@ function handleInit(err) {
     // node.files.add, node.files.get. See the API docs here:
     // https://github.com/ipfs/interface-ipfs-core/tree/master/API
 
+
     setInterval(function() {
       node.swarm.addrs(function (err, addrs) {
         if (err) {
           throw err;
         }
         document.getElementById("count").innerHTML = 'Active Peers: '+addrs.length;
-
-
-        console.log(addrs);
       });
 
     }, 3000);
