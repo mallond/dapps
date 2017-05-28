@@ -16,7 +16,6 @@ $("#signSubmit").click(function(){
   } catch(error) {
      alert(error+ ' '+privateKey);
   }
-
 });
 
 $("#verifySubmit").click(function(){
@@ -38,8 +37,29 @@ $("#verifySubmit").click(function(){
     $("#verifyFail").show();
     $("#verifySuccess").hide();
   }
-
 });
+
+$("#saveToIPFS").click(function(){
+  try {
+    var note = $("#saveNote").val();
+    node.files.add(new node.types.Buffer(note), function (err, res) {
+      if (err || !res) {
+        return console.error('Error - ipfs files add', err, res)
+      }
+
+      res.forEach(function (file) {
+        document.getElementById("hashKeyX").innerHTML = 'Note Hash Key: '+file.hash;
+        document.getElementById("permiLink").innerHTML = 'Immutable Link: https://ipfs.io/ipfs/'+file.hash;
+        console.log('successfully stored', file.hash)
+      })
+    })
+
+  } catch(error) {
+    alert(error+ ' '+privateKey);
+  }
+});
+
+
 
 <!-- Documnt Ready State -->
 
