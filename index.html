@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="David Mallon">
     <meta name="email" content="mallond@gmail.com">
-    <meta name="description" content="OpenSource project and exploration of DAPP. Decentralized Apps. IPFS, ECDSA 256-SHA encryption, document signing example. Broad exploratory and example code.">
+    <meta name="description"
+          content="OpenSource project and exploration of DAPP. Decentralized Apps. IPFS, ECDSA 256-SHA encryption, document signing example. Broad exploratory and example code.">
     <title>Interplanetary File System - Transaction DAPP</title>
 
     <!-- Bootstrap Core CSS -->
@@ -96,7 +97,10 @@
         </h2>
 
         <p class="lead">Interplanetary, Secure, federated, distributed, aggregated, - The Atomic Transaction Logger</p>
-        <p class="lead">The Interplanetary File System, IPFS,  is a loosely coupled federated data store. With the Goal in mind, "to connect all computers with the same system of files."  In-a-nutshell: A file versioning system that is distributed worldwide.</p>
+
+        <p class="lead">The Interplanetary File System, IPFS, is a loosely coupled federated data store. With the Goal
+            in mind, "to connect all computers with the same system of files." In-a-nutshell: A file versioning system
+            that is distributed worldwide.</p>
 
     </div>
 
@@ -104,7 +108,8 @@
 
     <!-- Second Featurette -->
     <div class="featurette">
-        <img class="featurette-image img-circle img-responsive pull-left" src="pic/atomic-symbol.png" alt="Atomic Encryption">
+        <img class="featurette-image img-circle img-responsive pull-left" src="pic/atomic-symbol.png"
+             alt="Atomic Encryption">
 
         <h2 class="featurette-heading">SHA-256 ECDSA - Atomic Encryption<br/><br/>
             <span class="text-muted">Someone asked, how long would it take a MacBook Pro to crack SHA-256 ECDSA encryption? </span>
@@ -119,19 +124,78 @@
     <!-- Third Featurette -->
 
     <div class="featurette">
-        <img class="featurette-image img-circle img-responsive pull-right" src="pic/iot.png" alt="Sign">
+        <img class="featurette-image img-circle img-responsive pull-right" src="pic/iot.png" alt="Signage">
 
         <h2 class="featurette-heading">Sign and Verify a Document - Live Demo <br/><br/>
             <span class="text-muted">ECDSA 256-SHA Document Signature. Upload and Digitally Sign a Document</span>
             <br><br><br><br>
         </h2>
 
-        <p class="lead">
-            Shared: 1PCVYXGy9eKFdApmev9vfWG9R1STUZYvd8 <br>
-            Secret: KzmTGUr1rPfpewPNRtakSKYxrCbPttwVzfiuCk7NcvSAjKSBv8Pc
-        </p>
-        <button type="button" class="btn-default">Upload Document</button>
-        <button type="button" class="btn-primary">Verify Document</button>
+    </div>
+
+    <div class="form-group">
+        <label for="note">Note:</label>
+        <textarea class="form-control" rows="5" id="note"> A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.</textarea>
+    </div>
+
+    <div id="tabpanel" role="tabpanel" style="margin-top: 10px;">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#sign_" aria-controls="sign" role="tab" data-toggle="tab"
+                                                      aria-expanded="true">Sign</a></li>
+            <li role="presentation" class=""><a href="#verify" aria-controls="verify" role="tab" data-toggle="tab"
+                                                aria-expanded="false">Verify</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Sign Tab -->
+            <div role="tabpanel" class="tab-pane active" id="sign_">
+                <form>
+                    <div id="pkGroup" class="form-group">
+                        <label for="privateKey" class="control-label">Paste your Bitcoin private key to sign with
+                            here</label>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="privateKey" spellcheck="false">
+                <span class="input-group-btn">
+                  <button id="newPrivateKey" class="btn btn-default" type="button">Generate new key</button>
+                </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="control-label">Confirm that this is your address</label>
+                        <input type="text" class="form-control" id="address" readonly="" spellcheck="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="signature" class="control-label">Digital signature</label>
+                        <textarea type="text" class="form-control" id="signature" readonly=""
+                                  spellcheck="false"></textarea>
+                    </div>
+                </form>
+                <button id="signSubmit" class="btn btn-default">Sign Note</button>
+            </div>
+            <!-- Verify Tab -->
+            <div role="tabpanel" class="tab-pane" id="verify">
+                <form>
+                    <div id="verifySignatureGroup" class="form-group">
+                        <label for="verifySignature" class="control-label">Paste the digital signature to verify
+                            here</label>
+                        <textarea type="text" class="form-control" id="verifySignature" spellcheck="true"
+                                  style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></textarea>
+                    </div>
+                    <div id="verifyAddressGroup" class="form-group has-success">
+                        <label for="verifyAddress" class="control-label">This is the Bitcoin address the signature
+                            verified to</label>
+                        <input type="text" class="form-control" id="verifyAddress" readonly="" spellcheck="false">
+                    </div>
+                </form>
+                <button id="verifySubmit" class="btn btn-default">Verify signature</button>
+                <div id="verifySuccess" style="text-align: center; color: green;"><strong>Verification Success</strong>
+                </div>
+                <div id="verifyFail" style="display: none; text-align: center; color: red;"><strong>Verification
+                    Failed</strong></div>
+            </div>
+        </div>
     </div>
 
     <hr class="featurette-divider" id="IOT">
@@ -182,7 +246,10 @@
             <div class="col-lg-3">
                 <a href="https://kjur.github.io/jsrsasign">ECDSA SHA-256</a>
             </div>
-            <div class="col-lg-3">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div class="col-lg-3">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
 
         </div>
 
