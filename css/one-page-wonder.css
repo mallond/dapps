@@ -205,3 +205,20 @@ footer {
         margin-left: 0;
     }
 }
+
+
+input.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+    border: 2px solid green;
+}
+
+textarea.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+
+textarea.valid, textarea.valid{
+    border: 2px solid green;
+}
