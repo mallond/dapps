@@ -26441,7 +26441,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/**
+/* WEBPACK VAR INJECTION */(function(Buffer) {/**
  * Created by dm on 5/28/17.
  */
 
@@ -26459,6 +26459,16 @@ const address = '135eGSTRjQcK6K9Gyqa2MsHpvnxgtdLMqG';
 var verified = Message(data).verify(address, signature);
 
 console.log(verified);
+
+const value = new Buffer('correct horse battery staple');
+const hash = bitcore.crypto.Hash.sha256(value);
+const bn = bitcore.crypto.BN.fromBuffer(hash);
+
+const address2 = new bitcore.PrivateKey(bn).toAddress();
+
+console.log('Private Key:', bn.toString());
+console.log('Public Address:', address2.toString());
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0).Buffer))
 
 /***/ }),
 /* 58 */
