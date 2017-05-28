@@ -156,23 +156,23 @@
             <div role="tabpanel" class="tab-pane active" id="sign_">
                 <form>
                     <div id="pkGroup" class="form-group">
-                        <label for="privateKey" class="control-label">Paste your Bitcoin private key to sign with
+                        <label for="privateKey" class="control-label">Bitcoin private key
                             here</label>
 
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="privateKey" spellcheck="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="privateKey" spellcheck="false" value="L3RH1BKNjNRFdmBCNKgTVxGNPv5cEuyEdjkCegEVLD2akM3teYeq">
                 <span class="input-group-btn">
-                  <button id="newPrivateKey" class="btn btn-default" type="button">Generate new key</button>
+
                 </span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="address" class="control-label">Confirm that this is your address</label>
-                        <input type="text" class="form-control" id="address" readonly="" spellcheck="false">
+                        <label for="address" class="control-label">Bitcoin address</label>
+                        <input type="text" class="form-control" id="address"  spellcheck="false" value="1MR5AXfXJXX78DbEjrBBXfSAKQKjmmUZeH">
                     </div>
                     <div class="form-group">
                         <label for="signature" class="control-label">Digital signature</label>
-                        <textarea class="form-control" id="signature" readonly=""
+                        <textarea class="form-control" id="signature"
                                   spellcheck="false"></textarea>
                     </div>
                 </form>
@@ -188,9 +188,9 @@
                                   style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; transition: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></textarea>
                     </div>
                     <div id="verifyAddressGroup" class="form-group has-success">
-                        <label for="verifyAddress" class="control-label">This is the Bitcoin address the signature
+                        <label for="verifyAddress" class="control-label">Paste the Bitcoin address here
                             verified to</label>
-                        <input type="text" class="form-control" id="verifyAddress" readonly="" spellcheck="false">
+                        <input type="text" class="form-control" id="verifyAddress"  spellcheck="false">
                     </div>
                 </form>
                 <button id="verifySubmit" class="btn btn-default">Verify signature</button>
@@ -267,6 +267,8 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+
+<script src="js/dapp_events.js"></script>
 
 </body>
 

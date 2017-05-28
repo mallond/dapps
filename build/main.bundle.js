@@ -26441,7 +26441,7 @@ module.exports = function(module) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(Buffer) {/**
+/**
  * Created by dm on 5/28/17.
  */
 
@@ -26450,7 +26450,6 @@ module.exports = function(module) {
 const bitcore = __webpack_require__(58);
 const Message = __webpack_require__(155);
 
-console.log('Babel');
 
 const privateKey = bitcore.PrivateKey.fromWIF('L3yk3ZLnGvqaEeYyJRkzL3T9NPRqATNpe34KPtLTQLX1RdeunYiM');
 const data = 'tada';
@@ -26460,15 +26459,28 @@ var verified = Message(data).verify(address, signature);
 
 console.log(verified);
 
-const value = new Buffer('correct horse battery staple');
-const hash = bitcore.crypto.Hash.sha256(value);
-const bn = bitcore.crypto.BN.fromBuffer(hash);
+const getSignature = (privateKey, data)=>{
+  const _privateKey = bitcore.PrivateKey.fromWIF(privateKey);
+  const signature = Message(data).sign(_privateKey);
+  return signature;
+};
 
-const address2 = new bitcore.PrivateKey(bn).toAddress();
+const verify = (address, signature, data)=>{
+  var verified = Message(data).verify(address, signature);
+  return verified;
+};
 
-console.log('Private Key:', bn.toString());
-console.log('Public Address:', address2.toString());
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0).Buffer))
+if (!window.i) {
+  window.DAPPLog={};
+}
+
+window.DAPPLog.tada = ()=>{
+  console.log('tada tada tada');
+};
+
+window.DAPPLog.getSignature = getSignature;
+window.DAPPLog.verify = verify;
+
 
 /***/ }),
 /* 58 */
