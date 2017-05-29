@@ -31,7 +31,6 @@
     <script src="https://unpkg.com/ipfs/dist/index.min.js"></script>
     <script src="js/dapp.js"></script>
 
-
 </head>
 
 <body>
@@ -115,7 +114,6 @@
 1MR5AXfXJXX78DbEjrBBXfSAKQKjmmUZeH</textarea>
         <button id="saveToIPFS" class="btn btn-primary">Save to IPFS</button>
     </div>
-
 
     <hr class="featurette-divider" id="AtomicEncryption">
 
@@ -285,3 +283,25 @@
 </body>
 
 </html>
+
+<!-- Authors Hidden Notes and cool shit
+
+For your eyes only - and/or those who know the how
+
+#IPFS
+
+- Hosting a Website https://ipfs.io/ipfs/QmdPtC3T7Kcu9iJg6hYzLBWR5XCDcYMY7HV685E3kH3EcS/2015/09/15/hosting-a-website-on-ipfs/
+- This site running on IPFS: https://gateway.ipfs.io/ipfs/QmdDpBY4gcodFKX1Yh4o4j71JLw2oCsdTt2Sbb4Yewj32i/index.html
+- This site running on IPNS: https://gateway.ipfs.io/ipns/Qmeg7VoDaso6Rbq2KG6i2PHHp3rWy4cd4NDpMmWS6MsMr5/index.html
+
+```
+$ ipfs add -r site/
+$ ipfs name publish <your site hash>
+$ ipfs name resolve <peerId>
+
+
+ipfs name publish QmdDpBY4gcodFKX1Yh4o4j71JLw2oCsdTt2Sbb4Yewj32i
+Published to Qmeg7VoDaso6Rbq2KG6i2PHHp3rWy4cd4NDpMmWS6MsMr5: /ipfs/QmdDpBY4gcodFKX1Yh4o4j71JLw2oCsdTt2Sbb4Yewj32i
+```
+
+-->
